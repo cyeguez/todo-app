@@ -44,6 +44,36 @@
   --Radio-color: var(--Purple-300);
   --check-icon: url("../images/icon-check.svg");
 }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Modo Dark */
+    --color-text-primary: var(--Gray-50);
+    --color-text-secondary: var(--Gray-600);
+    --background-color: var(--Navy-950);
+    --surface-color: var(--Navy-900);
+    --color-logo: var(--Gray-50);
+    --surface-color: var(--Navy-900);
+    --color-active-filter: var(--Blue-500);
+    --color-hover-filter: var(--Gray-50);
+    --color-hover-radio: var(--Purple-600);
+    --Check-Background: linear-gradient(
+      to right,
+      hsl(192, 100%, 67%),
+      hsl(280, 87%, 65%)
+    );
+    --Color-border: var(--Purple-700);
+    --Font: "Josefin Sans";
+    --Image-background-mobile: url("../images/bg-mobile-dark.jpg");
+    --Image-background-desktop: url("../images/bg-desktop-dark.jpg");
+    --Radio-color: var(--Purple-600);
+    --check-icon: url("../images/icon-check.svg");
+  }
+}
+
+
+
+
 body {
   min-height: 100vh;
   background-color: var(--background-color);
