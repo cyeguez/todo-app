@@ -27,29 +27,56 @@
     </style>
   </head>
   <body>
+    <div class="background"></div>
     <section class="container">
       <header>
         <div class="header__container">
           <h1 class="header__title">TODO</h1>
           <img src="./images/icon-moon.svg" alt="Moon" class="moon-icon" />
-          <img src="./images/icon-sun.svg" alt="Sun" class="moon-icon" />
+          <img src="./images/icon-sun.svg" alt="Sun" class="sun-icon" />
+        </div>
+        <div class="field-container">
+          <input
+            type="checkbox"
+            name=""
+            id="toogleText"
+            class="field-container__check"
+          />
+          <input
+            type="text"
+            class="field-container__text-field"
+            placeholder="Create a new todo..."
+            disabled
+          />
         </div>
       </header>
       <main>
-        <div class="field-container">
-          <input type="checkbox" name="" id="toogleText" />
-          <input type="text" class="field-container__text-field" disabled />
-        </div>
         <div class="taks-container">
           <div class="task">
-            <input type="checkbox" class="task__check" />
-            <p class="task__text">Jog around eht park 3x</p>
-            <img src="./images/icon-cross.svg" alt="Cross" />
+            <div class="task__check-container">
+              <input type="checkbox" class="task__check" />
+              <p class="task__text">Jog around eht park 3x</p>
+            </div>
+            <img src="./images/icon-cross.svg" alt="Cross" class="cross-icon" />
           </div>
+          <div class="task">
+            <div class="task__check-container">
+              <input type="checkbox" class="task__check" />
+              <p class="task__text">Jog around eht park 3x</p>
+            </div>
+            <img src="./images/icon-cross.svg" alt="Cross" class="cross-icon" />
+          </div>
+          <div class="task-container__stats">
+            <p class="task-container__stats__items-left">5 items left</p>
+            <p class="task-container__stats__clear-completed">
+              Clear Completed
+            </p>
+          </div>
+          
         </div>
         <div class="filters">
           <ul class="filters__group">
-            <li class="filters__group__item">All</li>
+            <li class="filters__group__item active ">All</li>
             <li class="filters__group__item">Active</li>
             <li class="filters__group__item">Completed</li>
           </ul>
@@ -61,11 +88,11 @@
     <!-- items left All Active Completed Clear Completed Drag and drop to reorder
     list -->
 
-    <footer class="attribution">
+    <!-- <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
-    </footer>
+    </footer> -->
   </body>
 </html>
